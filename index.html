@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Comforter+Brush&family=M+PLUS+Code+Latin:wght@100;200&family=Petemoss&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+
+            padding: 0px;
+            background: url("abs-gcc50cbbea_1920.jpg");
+            background-size:cover;
+
+        }
+
+        /* .header{
+            position: sticky;
+            background-color: #d7e6d5;
+            padding: 10px;
+            top: 0px;
+        } */
+        .left {
+            /* border: 1px solid green; */
+            display: inline-block;
+            position: absolute;
+            width: 25%;
+            top: 15x;
+            left: 19px;
+        }
+
+        .left img {
+            width: 70px;
+
+            filter: invert(200%);
+            filter: brightness(200%);
+
+            /* Logo Rotatiion animation  */
+            animation: myLogo 2s, myRot 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0, 0, 0, 0);
+            filter: drop-shadow(2px 2px 5px rgb(173, 85, 100));
+        }
+
+        @keyframes myLogo {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .name {
+            display: inline;
+            position: absolute;
+            left: 94px;
+            top: 0px;
+            font-weight: bold;
+            letter-spacing: 0px;
+            font-size: 23px;
+            /* text-shadow: 6px 6px 5px #a04d8b; */
+            -webkit-text-stroke: 4px;
+            -webkit-text-stroke-width: 0px;
+            -webkit-text-fill-color: #eeab36;
+            -webkit-text-stroke-color: #8a8fb0;
+
+            /* Name Animation */
+
+
+            /* animation: myName 4s;
+            animation-iteration-count: infinite; */
+
+
+
+        }
+
+        @keyframes myName {
+            0% {
+
+                left: 94px;
+                transform: rotate(10deg);
+                top: 0px;
+            }
+
+            25% {
+
+                /* left: 114px; */
+                top: 0px;
+            }
+
+            50% {
+
+                /* left: 134px; */
+                top: 0px;
+            }
+
+            75% {
+
+                /* left: 154px; */
+                top: 0px;
+            }
+
+            100% {
+
+                left: 174px;
+                top: 0px;
+            }
+
+        }
+
+        .mid {
+            display: block;
+            /* border: 1px solid blue; */
+            width: 52%;
+            margin: 0 auto;
+            margin-top: 23px;
+
+        }
+
+        .navbar li {
+            color:#ff9800;;
+            font-size: 21px;
+
+        }
+
+        .navbar a {
+            padding: 6px;
+            /* background-color: #020202; */
+            border-radius: 5px;
+            margin-left: 4px;
+            font-size: 18px;
+            transition: background 1s, padding, ;
+            transition-duration: 1s;
+        }
+
+        .navbar a:hover {
+            background-color: #daca3b;
+            padding: 5px;
+            font-size: 20px;
+
+        }
+
+        .navbar li {
+            margin: 0px 0px 0px 0px;
+
+            display: inline-block;
+
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+            /* border: 1px solid yellow; */
+            top: 23px;
+            right: 20px;
+        }
+
+
+
+        .btn {
+            margin-left: 15px;
+            padding: 8px;
+            background-color: #d7e6d5;
+            
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #btn {
+            cursor: pointer;
+        }
+
+        #search {
+            font-size: 14px;
+        }
+
+        .formtag {
+            width: 400px;
+            margin: 80px;
+            margin-left: 10px;
+
+            /* border: 2px solid blue; */
+        }
+
+        .formtag h2 {
+
+            text-align: center;
+          color:rgb(101, 243, 6);
+            margin-bottom: 2px;
+        }
+        .formtag div{
+            margin-bottom: 10px;
+        }
+        .india {
+            text-align: center;
+            margin-left: 10px;
+            padding: 6px 0px 1px 0px;
+        }
+        
+        .india input{
+            padding: 7px 53px 5px 31px;
+            border-radius: 5px;
+            background-color: #bfdfd9;
+        color: black;
+        }
+        /* .club{
+            height: 400px ;
+            width: 500px;
+            border: 2px solid gray;
+        } */
+
+        .container{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+        }
+        .item{
+            width: calc(90% / 2);
+            height: 300px;
+            border: 8px inset rgb(255, 255, 255);
+            overflow: auto;
+            /* resize: vertical; */
+            
+        }
+        .item img{
+            width: calc(90% / 2);
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+           
+            /* opacity: 0.8; */
+        }
+        .club{
+            float: right;
+            position: relative;
+            font-size: 30px;
+            /* right: 40px;
+            bottom: 20px; */
+          
+        }
+        .contain-nzame{
+            display: flex;
+            
+        }
+        .contain-nzame div{
+            width: calc(90% / 2);
+            
+          
+        
+        }
+        .name1{
+         text-align: center;
+        }
+        /* #item-2 img{
+          
+            border-radius: 100px;
+            border-style: none;
+            width:100px;
+            height: 100px;
+        }
+        #item2{
+            width: calc(100% / 2);
+            display:flex;
+        } */
+        </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div class="name">
+                Annu's Gym
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Gym Services</li>
+                </a>
+                <a href="#">
+                    <li>Fitness</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+
+        </div>
+
+        <div class="right">
+
+            <input type="search" class="btn" id="search" placeholder="Tpye To Search">
+            <button class="btn" id="btn">Make Appointment</button>
+
+        </div>
+    </header>
+
+
+
+    <div class="formtag">
+        <form action="">
+            <h2>Submit Form For Addmission</h2>
+            <div class="india"><input type="text" placeholder="Enter Your Name"  size="30px"></div>
+            <div class="india"><input type="text" placeholder="Enter Your Age"  size="30px"></div>
+            <div class="india"> <input type="text" placeholder="Enter Your Gender" size="30px"></div>
+            <div class="india"> <input type="text" placeholder="Enter Your Locality" size="30px"></div>
+
+            <div class="india"> <input type="text" placeholder="Enter Your Mobile No" size="30px"></div>
+            <div class="india"> <input type="text" placeholder="Enter Your Email" size="30px"></div>
+        </form>
+    </div>
+    <div class="contain-nzame">
+        <div class="name1"><h1>Our gym Gallery</h1></div>
+        <div class="name1"><h1>Our Trainer List</h1></div>
+    </div>
+<div class="container">
+   
+    <div class="item" id="item-1">
+
+            <img src="two  lady.jpg" alt="">
+            <img src="lady.jpg" alt="">
+            <img src="inside.jpg" alt="">
+            <img src="4.jpg" alt="">
+            <img src="5.jpg" alt="">
+            <img src="black mama.jpg" alt="">
+            <img src="black mami.jpg" alt="">
+            <img src="equi.jpg" alt="">
+
+    </div>
+    <div class="item" id="item-2">
+        <img src="https://media-exp1.licdn.com/dms/image/C5603AQFXrJUyQZ0EcA/profile-displayphoto-shrink_800_800/0/1614248293339?e=1643241600&v=beta&t=UUwK-PsAsnMw8RtsWfI1i10-L4k6Hf7HXKE7iVALdi8" alt="">
+        <img src="https://media-exp1.licdn.com/dms/image/C5103AQFGfDL0fFP8eQ/profile-displayphoto-shrink_800_800/0/1535214451514?e=1643241600&v=beta&t=5_rR7sXaLu3mmHbALA0wFwsAWsg7ugybwpihIYwGthA" alt="">
+        <img src="https://media-exp1.licdn.com/dms/image/D5603AQEC0dJHVKdC1w/profile-displayphoto-shrink_800_800/0/1629295437600?e=1643241600&v=beta&t=e7lY7SxTLXcddPtWAI8t2ePUX1zYVccDzMs9f0iSarc" alt="">
+    </div>
+    
+</div>
+
+
+
+
+<div class="club">
+Designed By Aniruddha Kajale
+</body>
+
+</html>
